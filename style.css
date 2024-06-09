@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+  text-align: center;
+}
+.container
+{
+  background-image: url(bhaktapur.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  box-shadow: 0 0 10em 100em rgba(0, 0, 0, 0.5) inset;
+  display: flex;
+  flex-direction: column;
+  padding-bottom:2em ;
+}
+h1{
+  font-weight: lighter;
+  margin: 1.3em 0;
+}
+
+.content
+{
+  padding: 4em 2em;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10em;
+}
+.description{
+  text-align: left;
+  margin-bottom: 1.5em;
+}
+.title
+{
+  font-size: 2rem;
+  margin-bottom: 1.1em;
+  text-align: left;
+}
+.location
+{
+  padding: 1.2em;
+}
+iframe
+{
+  width: 100%;
+}
+a{
+  text-decoration: none;
+  color: #00ff6c;
+}
+@media(min-width:50rem)
+{
+  .description
+  {
+    font-size: 1.3rem;
+  }
+  .navs{
+    margin: 2em;
+    font-size: 1.5rem;
+  }
+}
+header{
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+}
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.navs{
+  color:white;
+  text-transform: uppercase;
+  margin: 1em;
+  font-size: .8em;
+  transition: all .1s;
+}
+.navs:hover,
+navs:focus{
+  color: #00ff6c;
+}
